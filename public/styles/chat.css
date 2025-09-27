@@ -22,7 +22,7 @@ body {
 }
 .header .title {
   font-weight: 600;
-  color: #b6281b;
+  color: #0096c7;
 }
 .container {
   max-width: 420px;
@@ -100,7 +100,7 @@ body {
 
 /* outgoing bubble (right) - red like design */
 .bubble.out {
-  background: #b6281b;
+  background: #0096c7;
   color: #fff;
   border-top-right-radius: 6px;
   border-top-left-radius: 14px;
@@ -115,7 +115,7 @@ body {
   width: 12px;
   height: 12px;
   transform: rotate(45deg);
-  background: #b6281b;
+  background: #0096c7;
   border-radius: 2px;
 }
 
@@ -162,7 +162,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #b6281b;
+  background: #0096c7;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -173,3 +173,16 @@ body {
   font-size: 12px;
   color: #666;
 }
+
+/* differentiate sender vs receiver meta */
+.bubble.in .meta .small,
+.bubble.in .meta .time {
+  color: #666; /* receiver info grey */
+}
+
+.bubble.out .meta .small,
+.bubble.out .meta .time {
+  color: #fff; /* sender info white */
+}
+
+

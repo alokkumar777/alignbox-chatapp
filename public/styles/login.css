@@ -44,3 +44,35 @@
 .error-msg {
   color: red;
 }
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .login-container {
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .login-title {
+        font-size: 1.5em;
+    }
+
+    .input-field {
+        padding: 8px;
+    }
+
+    .login-btn {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login-container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .login-title {
+        font-size: 1.2em;
+    }
+}
