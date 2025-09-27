@@ -11,17 +11,10 @@ A simple and effective chat application built with JavaScript, HTML, and CSS. Th
 
 ## Screenshots
 
-### Login Page
+| Login Page | Registration Page | Chat Interface |
+|------------|-------------------|----------------|
+| ![Login Page](screenshots/login.png) | ![Registration Page](screenshots/register.png) | ![Chat Interface](screenshots/chat.png) |
 
-![Login Page](screenshots/login.png)
-
-### Registration Page
-
-![Registration Page](screenshots/register.png)
-
-### Chat Interface
-
-![Chat Interface](screenshots/chat.png)
 
 ## Installation
 
