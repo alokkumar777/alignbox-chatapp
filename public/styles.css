@@ -1,0 +1,175 @@
+/* styles.css - minimal but styled to match the Figma feel */
+* {
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header .title {
+  font-weight: 600;
+  color: #b6281b;
+}
+.container {
+  max-width: 420px;
+  margin: 20px auto;
+  background: transparent;
+}
+
+.chat-window {
+  height: 72vh;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding-bottom: 80px;
+}
+
+/* message row */
+.msg-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+.msg-row.right {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 40px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.avatar.black {
+  background: #111;
+}
+
+/* bubble base */
+.bubble {
+  max-width: 66%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.25;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+.bubble .meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* incoming bubble (left) */
+.bubble.in {
+  background: #f2f4f6;
+  color: #111;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 14px;
+}
+
+/* outgoing bubble (right) - red like design */
+.bubble.out {
+  background: #b6281b;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 14px;
+}
+
+/* small triangular notch for outgoing bubble */
+.bubble.out::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background: #b6281b;
+  border-radius: 2px;
+}
+
+/* timestamp */
+.time {
+  font-size: 11px;
+  color: #999;
+  margin-left: 8px;
+}
+
+/* input area */
+.input-area {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  background: transparent;
+}
+.input-area .input {
+  flex: 1;
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 36px;
+  border: 1px solid #eee;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.input-area input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+.send-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #b6281b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* small helper */
+.small {
+  font-size: 12px;
+  color: #666;
+}
