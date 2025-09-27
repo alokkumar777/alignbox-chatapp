@@ -1,0 +1,46 @@
+/* Container */
+.login-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* Title */
+.login-title {
+  color: #b6281b;
+  margin: 0 0 12px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #b6281b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #9f2116;
+}
+
+/* Links */
+.register-link {
+  margin-top: 8px;
+}
+
+/* Error message */
+.error-msg {
+  color: red;
+}
